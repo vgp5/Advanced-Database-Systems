@@ -66,12 +66,12 @@ END;
 
 set serveroutput on
 ```
-►  
+ 
 
-c) A composite number is a positive integer that can be formed by multiplying two smaller positive integers. Equivalently, it is a positive integer that has at least one divisor other than 1 and itself.
-Write a function in PL/SQL called MYCOMPOSITE to check if the number is a composite number or not. Your program should call MYPRIME.
-Copy/paste your PL/SQL code at the first red arrow and SNIP the screen output of the main program at the second red arrow. [3]
-►
+# c) A composite number is a positive integer that can be formed by multiplying two smaller positive integers. Equivalently, it is a positive integer that has at least one divisor other than 1 and itself.
+# Write a function in PL/SQL called MYCOMPOSITE to check if the number is a composite number or not. Your program should call MYPRIME.
+
+```
  CREATE OR REPLACE FUNCTION MYCOMPOSITE(A IN NUMBER) RETURN BOOLEAN IS
   is_prime BOOLEAN;
 BEGIN
@@ -80,14 +80,14 @@ BEGIN
 END MYCOMPOSITE;
 /
 set serveroutput on
+```
 
-► 
 
 
-d) Call MYCOMPOSITE from a main program with n=99, n=97, n=17, and n=83. The main program should send the results to the screen. The results should be self-documenting.  
-The number 99 is a composite number, a product of 11 and 9. 
-The number 97 is not a composite number.
-Copy/paste your PL/SQL code at the third red arrow and SNIP the screen output of the main program at the fourth red arrow. [2]
+# d) Call MYCOMPOSITE from a main program with n=99, n=97, n=17, and n=83. The main program should send the results to the screen. The results should be self-documenting.  
+## The number 99 is a composite number, a product of 11 and 9. 
+## The number 97 is not a composite number.
+```
 ► DECLARE
   numbers_to_test NUMBER := 0;
   is_composite BOOLEAN;
@@ -113,102 +113,85 @@ END;
 
 
 set serveroutput on
+```
+ 
 
-► 
+# The goal of this problem is to load some health data from the government into our Oracle Database and use it to answer a few questions. (This will be continued in the next homework.)
 
-The goal of this problem is to load some health data from the government into our Oracle Database and use it to answer a few questions. (This will be continued in the next homework.)
+# Go to:  https://ephtracking.cdc.gov/
 
-Go to:  https://ephtracking.cdc.gov/
+# Click on Explore Data
 
-Click on Explore Data
+## STEP 1: CONTENT
+## Click on “Select Content Area” so that you get “Chronic Obstructive Pulmonary Disease (COPD)”.
+## Choose “Mortality from COPD” on the second drop-down menu.
+## Choose “Crude Death Rate from COPD among people >= 25 years of age per 100,000 population” on the third drop-down menu.
 
-STEP 1: CONTENT
-Click on “Select Content Area” so that you get “Chronic Obstructive Pulmonary Disease (COPD)”.
-Choose “Mortality from COPD” on the second drop-down menu.
-Choose “Crude Death Rate from COPD among people >= 25 years of age per 100,000 population” on the third drop-down menu.
+## STEP 2: GEOGRAPHY TYPE
+## National by State
 
-STEP 2: GEOGRAPHY TYPE
-National by State
+## STEP 3: GEOGRAPHY
+## All States.
 
-STEP 3: GEOGRAPHY
-All States.
+## STEP 4: TIME
+## 2020
 
-STEP 4: TIME
-2020
+## STEP 5: ADVANCED OPTIONS
+## Race Ethnicity
+## All 4 Choices for Race 
 
-STEP 5: ADVANCED OPTIONS
-Race Ethnicity
-All 4 Choices for Race 
-
-Then download the data and save it as a COPD.CSV file. 
-
- 	Look at the Map. Note the menu that lets you choose between the four race choices.
-Ask yourself these NON-CREDIT questions: What state has the highest value? What state has the lowest value? What does the number mean? Why do you think the state(s) with the highest value(s) have the highest value? Do you notice differences between the Race Choices? Why do you think those happen?
-
-Even though these are non-credit questions, I would like you to attempt to write answers. If they are wrong, you don’t lose anything. 
-[5 points]
-
-One of the most important steps when handling data (here and in Machine Learning) is to CLEAN the data. Look at the spreadsheet now.
-
-We will do computation on the data. Is there anything in the data that will make computation impossible?  Do you notice a pattern?  NO CREDIT. But write the answer.
-
-Now Clean the Data as suggested in class.
-
-Load the Cleaned Data into an Oracle Table COPD1 using SQL Developer. 
-Write an SQL statement to display the COPD1 table. 
-
-Copy/paste your SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show only the first 10 rows. [5 points]
+## Then download the data and save it as a COPD.CSV file. 
 
 
-► 
+## One of the most important steps when handling data (here and in Machine Learning) is to CLEAN the data. Look at the spreadsheet now.
+
+## We will do computation on the data. Is there anything in the data that will make computation impossible?  Do you notice a pattern?  NO CREDIT. But write the answer.
+
+## Now Clean the Data as suggested in class.
+
+## Load the Cleaned Data into an Oracle Table COPD1 using SQL Developer. 
+## Write an SQL statement to display the COPD1 table. 
+
+```
 SELECT * 
 FROM copd
 FETCH FIRST 10 ROWS ONLY;
 
-► 
-
-Unfortunately, the values in Column D are percentages. If we want real numbers of COPD cases, then we need a second table that contains states and populations by state and by race.
+```
 
 
-I found such a table:
-
-https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_race/ethnicity
-
-Copy and paste the table into an EXCEL spreadsheet, starting from Alabama and ending with Wyoming.
-Save it as a file POPULATION.CSV. 
-
-Delete all percentage columns.
-Delete the Hispanic column (they are double-counted as race).  
-Check the first column's first character (make sure it is not a space character).
-
-Load the resulting POPULATION.CSV file into Oracle using SQL/Developer. Call the table POPULATION1. 
-
-Now we have a problem. COPD1 has White, Black, Other, and Multi.
-POPULATION1 has additional columns Native…, Asian, Pacific…, Some Other…
-So the definition of OTHER is different in the two data sets. A common problem.
-
-This is called a problem of different grain size. POPULATION1 is more fine-grained. 
-
-Write an SQL statement to display the POPULATION1 table. 
-Copy/paste your SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show only the first 10 rows. [5 points]
+# https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_race/ethnicity
 
 
-► SELECT * 
+# Save it as a file POPULATION.CSV. 
+
+## Delete all percentage columns.
+## Delete the Hispanic column (they are double-counted as race).  
+## Check the first column's first character (make sure it is not a space character).
+
+## Load the resulting POPULATION.CSV file into Oracle using SQL/Developer. Call the table POPULATION1. 
+
+## Now we have a problem. COPD1 has White, Black, Other, and Multi. POPULATION1 has additional columns Native…, Asian, Pacific…, Some Other… So the definition of OTHER is different in the two data sets. A common problem.
+
+## This is called a problem of different grain size. POPULATION1 is more fine-grained. 
+
+# Write an SQL statement to display the POPULATION1 table. 
+
+
+```
+SELECT * 
 FROM population1
 FETCH FIRST 10 ROWS ONLY;
-
-► 
-
+```
 
 
-Write a SELECT statement against POPULATION1 that returns the columns State, White, Black, Mixed, and a new computed column OTHER2 that contains the SUM of Native…, Asian, Pacific…, Some Other… So, there will be 5 columns in the answer. 
-[5 points]
-
-Hand-check the first two rows to make sure the result makes sense. NO CREDIT on this. 
-Copy/paste your SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show only the first 10 rows. [5 points]
 
 
-► SELECT
+# Write a SELECT statement against POPULATION1 that returns the columns State, White, Black, Mixed, and a new computed column OTHER2 that contains the SUM of Native…, Asian, Pacific…, Some Other… So, there will be 5 columns in the answer. 
+
+
+```
+ SELECT
     State,
     white,
     black_or_african_american,
@@ -220,16 +203,15 @@ FROM
 SELECT * 
 FROM population1
 FETCH FIRST 10 ROWS ONLY;
-
-► 
-
+```
 
 
-Write a combined CREATE/SELECT that captures the result of Question 8) into a new table POPULATION2. 
-Copy/paste your SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show only the first 10 rows. [3 points]
 
 
-► CREATE TABLE POPULATION2 AS
+# Write a combined CREATE/SELECT that captures the result of Question 8) into a new table POPULATION2. 
+
+```
+ CREATE TABLE POPULATION2 AS
 SELECT
     State,
     White,
@@ -242,16 +224,15 @@ FROM
 SELECT * 
 FROM population2
 FETCH FIRST 10 ROWS ONLY;
-
-► 
-
+```
 
 
 
-Write a PL/SQL program using an explicit cursor that displays all columns sorted by OTHER2 in descending order in the table POPULATION2.
-Copy/paste your PL/SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show the first 10 and the last 10 rows. [5 points]
-Your screen outputs should look like this:
-►  DECLARE
+
+
+# Write a PL/SQL program using an explicit cursor that displays all columns sorted by OTHER2 in descending order in the table POPULATION2.
+```
+  DECLARE
     CURSOR population_cursor IS
         SELECT *
         FROM POPULATION2
@@ -293,21 +274,16 @@ END;
 /
 
 set serveroutput on
-► First 10:
-	
-Last 10:
-	
+```
 
 
 
 
 
-Now we are finally ready to start the real work. Do a JOIN between COPD1 and POPULATION2 so that we get a table that contains every State multiple time, with all race information from POPULATION2. 
+# Do a JOIN between COPD1 and POPULATION2 so that we get a table that contains every State multiple time, with all race information from POPULATION2. 
 
-Copy/paste your SQL code at the first red arrow and SNIP the screen output at the second red arrow. Show only the first 10 rows. [5 points]
-
-
-► SELECT
+```
+ SELECT
     C.State,
     C.Value,
     C.Year,
@@ -324,17 +300,14 @@ ON
     TRIM(BOTH ' ' FROM C.State) = TRIM(BOTH ' ' FROM P.State)
 WHERE
     ROWNUM <= 10;
-► 
+```
 
 
 
-Write an SQL statement to capture the result of 11) in a new table POPULATION_COPD.
-Copy/paste your SQL code at the first red arrow.
+# Write an SQL statement to capture the result of 11) in a new table POPULATION_COPD.
 
-In the NEXT Homework, you will write a PL/SQL program that computes the absolute number of Whites with COPD, Blacks with COPD, Others with COPD, and Mixed with COPD, based on the table POPULATION_COPD.
+# Write an SQL statement to display the POPULATION_COPD table. 
 
-Write an SQL statement to display the POPULATION_COPD table. 
-Copy/paste your SQL code at the second red arrow and SNIP the screen output at the third red arrow. Show only the first 10 rows. [2 points]
 
 ```
  CREATE TABLE POPULATION_COPD AS
@@ -360,10 +333,10 @@ ON
 
 
 
-Write a PL/SQL program using an explicit cursor that displays states and summation of values for each state, sorted by the state in ascending order in the table POPULATION_COPD. [5 points]
+# Write a PL/SQL program using an explicit cursor that displays states and summation of values for each state, sorted by the state in ascending order in the table POPULATION_COPD. [5 points]
 
 
-
+```
  DECLARE
     CURSOR copd_cursor IS
         SELECT State, SUM(Value) AS Total_Value
@@ -393,5 +366,4 @@ BEGIN
     CLOSE copd_cursor;
 END;
 / 
-		First 10			Last 10
-
+```
