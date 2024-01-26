@@ -1,0 +1,205 @@
+StateFIPS,State,Year,Value,Race
+1,Alabama,2020,46.8,White
+1,Alabama,2020,125.8,Black
+1,Alabama,2020,NULL,Other
+1,Alabama,2020,NULL,Hispanic
+2,Alaska,2020,42,White
+2,Alaska,2020,43.1,Black
+2,Alaska,2020,NULL,Other
+2,Alaska,2020,NULL,Hispanic
+4,Arizona,2020,16.7,White
+4,Arizona,2020,18.6,Black
+4,Arizona,2020,26.8,Other
+4,Arizona,2020,100.1,Hispanic
+5,Arkansas,2020,18.6,White
+5,Arkansas,2020,47.3,Black
+5,Arkansas,2020,140.9,Other
+5,Arkansas,2020,NULL,Hispanic
+6,California,2020,14.1,White
+6,California,2020,19,Black
+6,California,2020,55.2,Other
+6,California,2020,81.6,Hispanic
+8,Colorado,2020,20.7,White
+8,Colorado,2020,24.1,Black
+8,Colorado,2020,37.7,Other
+8,Colorado,2020,71.9,Hispanic
+9,Connecticut,2020,8.6,White
+9,Connecticut,2020,13.2,Black
+9,Connecticut,2020,22.3,Other
+9,Connecticut,2020,60.4,Hispanic
+10,Delaware,2020,0,White
+10,Delaware,2020,27.1,Black
+10,Delaware,2020,87.5,Other
+10,Delaware,2020,NULL,Hispanic
+11,District of Columbia,2020,0,White
+11,District of Columbia,2020,0,Black
+11,District of Columbia,2020,10.4,Other
+11,District of Columbia,2020,51.5,Hispanic
+12,Florida,2020,12.1,White
+12,Florida,2020,27.6,Black
+12,Florida,2020,30,Other
+12,Florida,2020,106.5,Hispanic
+13,Georgia,2020,4.7,White
+13,Georgia,2020,9.5,Black
+13,Georgia,2020,33.2,Other
+13,Georgia,2020,96.4,Hispanic
+15,Hawaii,2020,16.5,White
+15,Hawaii,2020,27.9,Black
+15,Hawaii,2020,47.5,Other
+15,Hawaii,2020,NULL,Hispanic
+16,Idaho,2020,79.6,White
+16,Idaho,2020,NULL,Black
+16,Idaho,2020,NULL,Other
+16,Idaho,2020,NULL,Hispanic
+17,Illinois,2020,6.8,White
+17,Illinois,2020,8.2,Black
+17,Illinois,2020,52,Other
+17,Illinois,2020,78.9,Hispanic
+18,Indiana,2020,10.3,White
+18,Indiana,2020,12.8,Black
+18,Indiana,2020,57,Other
+18,Indiana,2020,111.2,Hispanic
+19,Iowa,2020,20.1,White
+19,Iowa,2020,85.7,Black
+19,Iowa,2020,NULL,Other
+19,Iowa,2020,NULL,Hispanic
+20,Kansas,2020,12.1,White
+20,Kansas,2020,32.9,Black
+20,Kansas,2020,56.5,Other
+20,Kansas,2020,95.6,Hispanic
+21,Kentucky,2020,53,White
+21,Kentucky,2020,113.8,Black
+21,Kentucky,2020,NULL,Other
+21,Kentucky,2020,NULL,Hispanic
+22,Louisiana,2020,13.6,White
+22,Louisiana,2020,16.8,Black
+22,Louisiana,2020,42.7,Other
+22,Louisiana,2020,95.4,Hispanic
+23,Maine,2020,0,White
+23,Maine,2020,89.5,Black
+23,Maine,2020,NULL,Other
+23,Maine,2020,NULL,Hispanic
+24,Maryland,2020,3.8,White
+24,Maryland,2020,6.6,Black
+24,Maryland,2020,27.8,Other
+24,Maryland,2020,71.1,Hispanic
+25,Massachusetts,2020,8.2,White
+25,Massachusetts,2020,10.2,Black
+25,Massachusetts,2020,20.2,Other
+25,Massachusetts,2020,61.3,Hispanic
+26,Michigan,2020,13.6,White
+26,Michigan,2020,17.1,Black
+26,Michigan,2020,46.8,Other
+26,Michigan,2020,91,Hispanic
+27,Minnesota,2020,17.5,White
+27,Minnesota,2020,19.9,Black
+27,Minnesota,2020,62.1,Other
+27,Minnesota,2020,NULL,Hispanic
+28,Mississippi,2020,49.2,White
+28,Mississippi,2020,147.4,Black
+28,Mississippi,2020,NULL,Other
+28,Mississippi,2020,NULL,Hispanic
+29,Missouri,2020,8.3,White
+29,Missouri,2020,16.3,Black
+29,Missouri,2020,45.6,Other
+29,Missouri,2020,101.6,Hispanic
+30,Montana,2020,0,White
+30,Montana,2020,61.3,Black
+30,Montana,2020,90.8,Other
+30,Montana,2020,NULL,Hispanic
+31,Nebraska,2020,10,White
+31,Nebraska,2020,24.7,Black
+31,Nebraska,2020,56.6,Other
+31,Nebraska,2020,91.3,Hispanic
+32,Nevada,2020,11.4,White
+32,Nevada,2020,23.4,Black
+32,Nevada,2020,45.3,Other
+32,Nevada,2020,115.8,Hispanic
+33,New Hampshire,2020,69.2,White
+33,New Hampshire,2020,NULL,Black
+33,New Hampshire,2020,NULL,Other
+33,New Hampshire,2020,NULL,Hispanic
+34,New Jersey,2020,7,White
+34,New Jersey,2020,11.6,Black
+34,New Jersey,2020,35.4,Other
+34,New Jersey,2020,64.7,Hispanic
+35,New Mexico,2020,14.7,White
+35,New Mexico,2020,42,Black
+35,New Mexico,2020,65.1,Other
+35,New Mexico,2020,130.2,Hispanic
+36,New York,2020,11.3,White
+36,New York,2020,16.3,Black
+36,New York,2020,29.6,Other
+36,New York,2020,63.8,Hispanic
+37,North Carolina,2020,5.1,White
+37,North Carolina,2020,20.7,Black
+37,North Carolina,2020,41,Other
+37,North Carolina,2020,87.3,Hispanic
+38,North Dakota,2020,0,White
+38,North Dakota,2020,42.6,Black
+38,North Dakota,2020,69.9,Other
+38,North Dakota,2020,NULL,Hispanic
+39,Ohio,2020,14.8,White
+39,Ohio,2020,16.3,Black
+39,Ohio,2020,52.2,Other
+39,Ohio,2020,94.9,Hispanic
+40,Oklahoma,2020,12.2,White
+40,Oklahoma,2020,58.6,Black
+40,Oklahoma,2020,61.7,Other
+40,Oklahoma,2020,131.8,Hispanic
+41,Oregon,2020,7,White
+41,Oregon,2020,20.8,Black
+41,Oregon,2020,74.4,Other
+41,Oregon,2020,NULL,Hispanic
+42,Pennsylvania,2020,9.9,White
+42,Pennsylvania,2020,12.8,Black
+42,Pennsylvania,2020,44.3,Other
+42,Pennsylvania,2020,74.8,Hispanic
+44,Rhode Island,2020,73.1,White
+44,Rhode Island,2020,NULL,Black
+44,Rhode Island,2020,NULL,Other
+44,Rhode Island,2020,NULL,Hispanic
+45,South Carolina,2020,9.4,White
+45,South Carolina,2020,15.1,Black
+45,South Carolina,2020,46.3,Other
+45,South Carolina,2020,100.8,Hispanic
+46,South Dakota,2020,32.9,White
+46,South Dakota,2020,77.6,Black
+46,South Dakota,2020,NULL,Other
+46,South Dakota,2020,NULL,Hispanic
+47,Tennessee,2020,6.9,White
+47,Tennessee,2020,42.3,Black
+47,Tennessee,2020,109.7,Other
+47,Tennessee,2020,NULL,Hispanic
+48,Texas,2020,8.8,White
+48,Texas,2020,15.2,Black
+48,Texas,2020,34.2,Other
+48,Texas,2020,92.3,Hispanic
+49,Utah,2020,12.8,White
+49,Utah,2020,13,Black
+49,Utah,2020,53.1,Other
+49,Utah,2020,NULL,Hispanic
+50,Vermont,2020,77.4,White
+50,Vermont,2020,NULL,Black
+50,Vermont,2020,NULL,Other
+50,Vermont,2020,NULL,Hispanic
+51,Virginia,2020,5.6,White
+51,Virginia,2020,8.6,Black
+51,Virginia,2020,36.5,Other
+51,Virginia,2020,73,Hispanic
+53,Washington,2020,5.8,White
+53,Washington,2020,14.3,Black
+53,Washington,2020,25.6,Other
+53,Washington,2020,61.3,Hispanic
+54,West Virginia,2020,54.9,White
+54,West Virginia,2020,130.1,Black
+54,West Virginia,2020,NULL,Other
+54,West Virginia,2020,NULL,Hispanic
+55,Wisconsin,2020,7.5,White
+55,Wisconsin,2020,20.8,Black
+55,Wisconsin,2020,47.9,Other
+55,Wisconsin,2020,73.5,Hispanic
+56,Wyoming,2020,106.9,White
+56,Wyoming,2020,NULL,Black
+56,Wyoming,2020,NULL,Other
+56,Wyoming,2020,NULL,Hispanic
