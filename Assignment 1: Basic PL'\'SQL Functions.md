@@ -34,7 +34,7 @@ set serveroutput on
 ## A=99
 ## A=97
 ## A=17
-##A=83
+## A=83
 ## The main program should send the results to the screen. The results should be self-documenting.  It should not be just Yes/No.
 ## The output should say something like this:
 ## The number 99 is NOT a prime number.
